@@ -27,7 +27,28 @@
   
 </head>
 <body>
-  
+<script src="http://sibeeshpassion.com/content/scripts/jquery-1.11.1.min.js"></script>
+<body oncontextmenu="return false">
+<script>  
+document.onkeypress = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+document.onmousedown = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+document.onkeydown = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+</script>  
   <section data-bs-version="5.1" class="menu menu3 cid-sFAA5oUu2Y" once="menu" id="menu3-4">
     
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
