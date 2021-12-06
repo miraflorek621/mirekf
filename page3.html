@@ -27,28 +27,46 @@
   
 </head>
 <body>
-<script src="http://sibeeshpassion.com/content/scripts/jquery-1.11.1.min.js"></script>
-<body oncontextmenu="return false">
-<script>  
-document.onkeypress = function (event) {  
-event = (event || window.event);  
-if (event.keyCode == 123) {  
-return false;  
-}  
-}  
-document.onmousedown = function (event) {  
-event = (event || window.event);  
-if (event.keyCode == 123) {  
-return false;  
-}  
-}  
-document.onkeydown = function (event) {  
-event = (event || window.event);  
-if (event.keyCode == 123) {  
-return false;  
-}  
-}  
-</script>  
+<script>
+    // disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+    document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
+        }
+ 
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
+        }
+ 
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+ 
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+    }
+ 
+</script>
+ <script>
+    function check(e)
+    {
+    alert(e.keyCode);
+    }
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                alert('Krást se nemá');
+            }
+            return false;
+    };
+    </script>  
   <section data-bs-version="5.1" class="menu menu3 cid-sFAA5oUu2Y" once="menu" id="menu3-k">
     
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
