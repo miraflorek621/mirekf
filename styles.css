@@ -71,6 +71,29 @@ body {
 
 
 /* Home section */
+.spo-flex {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.spo-frame{
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 4px;
+    margin-top: 120px;
+    margin-bottom: 15px;
+}
+
+.spo-frame1{
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 4px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
