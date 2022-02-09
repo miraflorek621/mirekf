@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
 html,
 body {
     margin: 0;
@@ -71,6 +75,9 @@ body {
 
 
 /* Home section */
+.img2 {
+    margin-top: 13px;
+}
 .spo-flex {
     height: 100vh;
     display: flex;
@@ -115,15 +122,17 @@ body {
     font-size: 70px;
     color: #fff;
     display: flex;
-    margin-top: 100px;
+    margin-top: 10vh;
     margin-right: 100px;
-    margin-left: 50px;
-    margin-bottom: 150px;
+    margin-left: 100px;
+    margin-bottom: 80px;
 }
 .img1 {
     float: right;
     margin-top: 60px;
-    margin-left: 150px;
+    margin-left: 0px;
+    height: 500px;
+    width: auto;
 }
 @media screen and (max-width: 720px) {
     .header1 {
@@ -137,7 +146,7 @@ body {
     }
     .img1 {
         float: right;
-        margin-right: 130px;
+        margin-right: 70px;
     }
     .div21 {
         height: 250px;
