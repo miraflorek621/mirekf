@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-@viewport{
-    zoom: 1.0;
-    width: extend-to-zoom;
-}
 html,
 body {
     margin: 0;
