@@ -75,10 +75,12 @@ blockquote {
   font-size: 18px;
   font-family: "Quicksand";
   position: relative;
+  text-decoration: none;
 }
 
 cite {
   color: white;
+  text-decoration: none;
 }
 
 .ulPro {
