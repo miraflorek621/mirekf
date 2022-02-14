@@ -162,6 +162,10 @@ cite {
   height: 100vh;
 }
 
+.div22 {
+  padding-left: 14px;
+}
+
 .home {
   width: 100%;
   height: 100vh;
@@ -187,7 +191,7 @@ cite {
 .img1 {
   float: right;
   margin-top: 60px;
-  margin-left: 0px;
+  margin-left: 30px;
   height: 500px;
   width: auto;
   overflow: hidden;
