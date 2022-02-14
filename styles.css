@@ -100,7 +100,7 @@ cite {
   padding: 2em 1em;
   width: 200px;
   height: 220px;
-  margin: 20px;
+  margin: 0 0 0 0;
   border-radius: 1em;
   display: list-item;
 }
