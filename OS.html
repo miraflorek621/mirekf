@@ -1,18 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<style>
+		
 			<title>Windows 95</title>
-		</style>
+		
 </head>
 <body bgcolor="grey">
-	
-	<center style="color: blue">
+    <style>
+        body{
+                font-family:Consolas;
+                margin:0px 50px 0px 50px;
+                
+            }
+        h2,h1  {
+                color:blue;
+                text-decoration:underline;
+               }
+        img {
+                border-radius:20px;
+            }
+    </style>
+    <center>
 
-<h1>Windows 95</h1>
+        <h1>Windows 95</h1>
 
-<img src="win95.jpg">
-		
+        <img src="https://www.cnews.cz/galerie/pictures/clanky/2015/08srpen/windows-95-slavi-20-let-existence/windows_95_slavi_20_let_existence.png" />
+
+        <h2>Základní charakteristika </h2>
+        <p>
+            Podobnì jako pøedchozí verze je Windows 95 stále nadstavba operaèního systému MS-DOS. Jeho upravená verze, která obsahuje modifikace pro lepší integraci s prostøedím Windows, je ovšem ji souèástí balení a instaluje se souèasnì se zbytkem systému Windows. Pùvodní verze Windows 95 obsahuje MS-DOS 7.0, ale pozdìjší revize jej aktualizovaly na verzi 7.1, která pøidala podporu FAT32. Aèkoliv je MS-DOS nezbytnou souèástí Windows 95, sám o sobì je potøeba pouze k zavedení jádra a ovladaèù Windows a pro zajištìní kompatibility. Tato skuteènost vedla k soudnímu sporu s vıvojáøi konkurenèního systému DR-DOS, kteøí tuto integraci povaovali za protisoutìní praktiku.
+
+            Windows 95 staví na technologii rozšíøeného reimu z Windows 3.0 a Windows 3.1x, jeho klíèovou komponentou je 32bitovı monitor virtuálních strojù (VMM32) vyuívající reim virtuální 8086 procesoru Intel 80386, co umoòuje bìh 16bitovıch programù v jinak 32bitovém chránìném módu. Hlavním rozdílem oproti pøedešlım verzím je podpora 32bitovıch uivatelskıch aplikací, avšak jednodušší programy šlo spustit i v Windows 3.1 za pouití zvláš dostupného doplòku Win32s.
+        </p>
+        <HR size=1 width=1915 color=&#x1f308 align=left>
+        <h2>Hardwarové nároky</h2>
+        <p>
+            Minimum: 386DX nebo 486 a 4-8 MB RAM
+            Doporuèeno: Pentium a 16 MB RAM
+        </p>
+        <HR size=1 width=1915 color=&#x1f308 align=left>
+        <h2>Instalace</h2>
+
+        <p>
+            1. Pokud máte Windows 95 na disketách budete bez problému, naopak pokud ji máte na CDROM èekají nás potíe, protoe v tuto chvíli jsme ponìkud nahraní, alespoò co se tıèe ovladaèe k mechanice CDROM. Nicménì pokud jste vıjimkou povede se vám nyní spustit instalaci tak, e napíšete pøíkaz "X:" kde x je písmeno oznaèující vaší CD mechaniku. Pokud se na tento disk dostanete napište SETUP a dejte Enter. Pokud se spustí Setup, postupujte podle instrukcí na obrazovce. Tudy se dostanete do ji grafického reimu a s trochou štìstí projdete celou instalací.
+            <br />
+            2. Pokud se to nepovedlo zkuste disk naformátovat disk s parametrem /S, tedy napište po zavedení systému z diskety "Format C: /S" a disk se naformátuje a následnì je na tento disk zaveden systém MS-DOS, take po vyjmutí diskety a provedení resetu je zaveden systém z pevného disku. Dalším krokem bude, e z diskety dodané spolu s CDROMem nainstalujeme ovladaè a poté budeme pokraèovat jako v kroku 1.
+            <br />
+            3. Pokud selhal i druhı zpùsob a to v kterémkoliv bodì je tu tøetí a nejjistìjší monost a tou je jakımkoliv zpùsobem dostat obsah instalaèního CDROMu na svùj pevnı disk. Pokud jste v situaci, e se na disk dostanete, ale instalace ne a ne bìet pouijte napøíklad program Norton Commander pro DOS a pøesuòte vše z CD do adresáøe se jménem tøeba "INSTAL" nebo "tak nìco". Pokud dotyènı program nevlastníte zkuste napøíklad pøíkaz v DOSu "copy X:*.* C:\INSTAL" Pokud ani to nepomohlo pomùe vám nìkterı kamarád, kterı si váš disk nainstaluje do poèítaèe a data na nìj pøevede v ji bìícím operaèním systému. Poté mùete ve svém poèítaèi spustit instalaci takto:
+            <br />
+            Vıchozím bodem je root vašeho disku, tedy
+            C:\>
+            Zadejte tedy pøíkazy:
+            C:\>cd instal
+            C:\ instal>setup
+            A instalace snad ji probìhne bez problémù.
+            <br />
+            Instalace zaèíná spuštìním programu Scandisk, kterı provìøí váš disk a pokud ho shledá bıt vyhovujícím, postoupíte do etapy dvì, kde se zjišují informace o vašem poèítaèi a nakonec probìhne kopírování souborù a restart poèítaèe.
+            <br />
+            Získávání informací o systému - vybereme adresáø, kam se nainstalují Windows, pøièem implicitní je C:\Windows, co se dá zmìnit. Dále máte na vıbìr 4 varianty instalace:
+            <br />
+            Portable - urèena pro pøenosné poèítaèe s programy pro synchronizaci dat se stolním systémem atd.
+            Compact - tzv. minimální konfigurace s minimálními nároky na místo na disku.
+            Typical - standardní instalace
+            Custom - uivatelská - uivatel si urèí, které programy se nainstalují.
+            <br />
+            V provedení custom jsou nabídnuty standardnì instalované monosti, které si mùete nyní doplnit, pøípadnì proškrtat.
+            <br />
+
+        </p>
+        <HR size=1 width=1915 color=&#x1f308 align=left>
+
+        <h2>Uivatelské rozhraní</h2>
+        <img src="https://www.itnetwork.cz/images/272/win95.png" />
+        <HR size=1 width=1915 color=&#x1f308 align=left>
+        <h2>Kompatibilita</h2>
+        <p>
+            Windows 95 byl navren tak, aby byl maximálnì kompatibilní se stávajícími programy a ovladaèi zaøízení pro MS-DOS a 16bitové Windows a zároveò nabízel stabilnìjší a vıkonnìjší systém. Architektura Windows 95 je vıvoj systému Windows for Workgroups' 386 rozšíøeného reimu.
+        </p>
+        <HR size=1 width=1915 color=&#x1f308 align=left>
+        <h2>Verze systému</h2>
+        <p>
+            16 a 32 bitù
+        </p>
+        <HR size=1 width=1915 color=&#x1f308 align=left>
 
 
 
@@ -25,13 +95,7 @@
 
 
 
-
-
-
-
-
-
-		</center>
+    </center>
 
 
 </body>
