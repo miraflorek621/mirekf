@@ -8,8 +8,15 @@ html, body {
   font-size: 62.5%;
   font-size: 10px;
 }
-
+.div21{
+    margin-bottom:200px;
+    margin-left: -300px;
+}
 /* Navbar */
+.header1 {
+    position:relative;
+    margin-top: -30px;
+}
 .nav {
   width: 100%;
   height: 65px;
@@ -163,7 +170,7 @@ cite {
 }
 
 .div22 {
-  margin-top: 40px;
+  margin-top: -150px;
   width: 150px;
   height: 60px;
   border-radius: 50px;
@@ -174,12 +181,12 @@ cite {
 
 .mega{
     background-color:white;
-    width:450px;
+    width:950px;
     height:100px;
     z-index:2;
     position:absolute;
     margin-top:480px;
-    margin-left:20px;
+    margin-left:-480px;
 }
 
 section{
@@ -187,16 +194,17 @@ section{
 }
 
 .brutchat {
-    border-radius:20px;
-    margin-left:20px;
-    margin-top:168px;
+    border-radius:10px;
+    margin-left:-20vw;
+    margin-top:68px;
     position:absolute;
     z-index:0;
 }
 
 
 .okej{
-    z-index:2;
+    position:absolute;
+    z-index:4;
     background-color:white;
 }
 
