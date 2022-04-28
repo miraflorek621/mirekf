@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <head>
-    
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&family=Varela+Round&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap');
     </style>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <nav class="nav">
         <div class="container">
-            <div class="logo" >
+            <div class="logo">
                 <a href="index.html"><img class="img2" src="logo-white.png" height="40px" width="50px" href="index.html"></a>
             </div>
             <div id="mainListDiv" class="main_list">
@@ -35,46 +36,52 @@
                 <h1 class="header1">Mirek Florek</h1>
             </div>
             <div class="div22">
-                <img class="img1" src="img11.png" alt="">
+                <p href="">BRUT</p>
             </div>
+            <div>
+                <iframe class="brutchat" width="450px" height="350px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" src="https://chatroll.com/embed/chat/brutchat?id=M5uC9Z-ae58&platform=html"></iframe>
+                <div class="mega"></div>
+            </div>
+
         </div>
     </section>
 
-    <div style="height: 1000px">
-			<h2 class="myH2">UNDER MANTAINCE</h2>
-			<p class="myP"></p>
-			<p class="myP"></p>
-			<p class="myP"></p>
-				<p class="myP">
-				
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-			</p>
+    <div class="okej" height: 1000px">
+        <h2 class="myH2">UNDER MANTAINCE</h2>
+        <p class="myP"></p>
+        <p class="myP"></p>
+        <p class="myP"></p>
+        <p class="myP">
+            ing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+        </p>
+        
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
 
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
-    <script>
-        $('.navTrigger').click(function () {
-        $(this).toggleClass('active');
-        console.log("Clicked menu");
-        $("#mainListDiv").toggleClass("show_list");
-        $("#mainListDiv").fadeIn();
-    });
-    </script>
+
+
+
+
+
+        <script>
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+        <script>
+            $('.navTrigger').click(function () {
+                $(this).toggleClass('active');
+                console.log("Clicked menu");
+                $("#mainListDiv").toggleClass("show_list");
+                $("#mainListDiv").fadeIn();
+            });
+        </script>
 
 </body>

@@ -163,8 +163,101 @@ cite {
 }
 
 .div22 {
-  padding-left: 14px;
+  margin-top: 40px;
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #375bff, #2e4de6);
+  box-shadow:  37px 37px 74px #2137a6,
+             -37px -37px 74px #4573ff;
 }
+
+.mega{
+    background-color:white;
+    width:450px;
+    height:100px;
+    z-index:2;
+    position:absolute;
+    margin-top:480px;
+    margin-left:20px;
+}
+
+section{
+    z-index:-1;
+}
+
+.brutchat {
+    border-radius:20px;
+    margin-left:20px;
+    margin-top:168px;
+    position:absolute;
+    z-index:0;
+}
+
+
+.okej{
+    z-index:2;
+    background-color:white;
+}
+
+.div22 {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.7s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.div22:after {
+  content: "";
+  position: absolute;
+  margin-top: 40px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #375bff, #2e4de6);
+  box-shadow:  37px 37px 74px #2137a6,
+              -37px -37px 74px #4573ff;
+  z-index: -2;
+}
+.div22:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #003c81;
+  transition: all 0.7s;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.div22:hover:before {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.div22 > p{
+  margin-top: 6px;
+  margin-left: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
 
 .home {
   width: 100%;
@@ -533,4 +626,8 @@ cite {
     padding: 2%;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+* {
+    box-sizing: border-box;
+}
