@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="_MainCode.css" >
+
+        <style> 
+             @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&family=Varela+Round&display=swap');
+             @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap');
+        
+    
+        </style>
+    </head>
+    
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img class="img2" src="logo-white.png" height="40px" width="50px" href="index.html"></a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index2.html">Music</a></li>
+                        <li><a href="projekty.html">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+
+        <section class="home">
+            <img src="dots.png" alt="" class="dots">
+            <img src="dots1.png" alt="" class="dots1">
+            <div class="flex-container">
+                <div class="div21">
+                    <h1 class="header1">Miroslav<br>Florek</h1>
+                </div>
+                <div class="button_1">BRUT</div>
+                <div class="button_1">BRUT</div>
+                <div class="button_1">BRUT</div>
+                <div class="div23"><p class="header2">Welcome on my new website</p>
+                    <p class="paragharph">Some information about me:
+                    <ul>
+                        <li>I'm student of Voš a Spš Jičín</li>
+                        <li>Curently woking as a junior web developer at Datera.cz</li>
+                        <li>I have great expirience with Linux administarion</li>
+                        <li>I also trade crypto in free time, you can join my referal for free 10$</li>
+
+                    </ul> 
+                    <a href="https://www.coinbase.com/join/florek_vh"><div class="button_2">Join me</div></a>
+                </div>
+                
+                
+                <iframe class="BTC" src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=3319" >Cryptocurrency Prices</iframe>
+            </div>
+        </section>
+
+        <section class="Section2">
+                <div class="okej" height: 1000px>
+                <h2 class="myH2">UNDER MANTAINCE</h2>
+                <p class="myP"></p>
+                <p class="myP"></p>
+                <p class="myP"></p>
+                <p class="myP">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+                </p>
+            
+            </div>
+        </section>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+
+
+
+
+
+        <script>
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+        <script>
+            $('.navTrigger').click(function () {
+                $(this).toggleClass('active');
+                console.log("Clicked menu");
+                $("#mainListDiv").toggleClass("show_list");
+                $("#mainListDiv").fadeIn();
+            });
+        </script>
+
+
+    </body>
+</html>
