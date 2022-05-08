@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+    overflow-x: hidden;
+  }
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
+@import 'scss/_button_1';
+@import 'scss/_NavBar';
+@import 'scss/_Section';
+@import 'scss/_Section2';
+@import 'scss/_button_2';
