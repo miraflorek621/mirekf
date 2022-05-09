@@ -1,66 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Music</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<body>
-    <nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html"><img class="img2" src="logo-white.png" height="40px" width="50px" href="index.html"></a>
+    <head>
+        <link rel="stylesheet" href="_MainCode.css" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> 
+             @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&family=Varela+Round&display=swap');
+             @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap');
+            
+    
+        </style>
+    </head>
+    
+    <body>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img class="img2" src="logo-white.png" height="40px" width="50px" href="index.html"></a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index2.html">Music</a></li>
+                        <li><a href="projekty.html">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
             </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index2.html">Music</a></li>
-                    <li><a href="projekty.html">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+        </nav>
+
+        <section class="home">
+            <div class="flex-container2">
+                <h2 class="myH3">Moje Oblíbené Skladby</h2>
+                <div class="musicdiv">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/SE74y7f6IJc" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="musicdiv">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/c0bga39JMiM" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="musicdiv">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/0SspQ3ovu4c" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="musicdiv">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/ZuYx_z9KU68" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="musicdiv">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/oG_UMYngoTc" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="musicdiv">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/SE74y7f6IJc" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="musicdiv">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/SE74y7f6IJc" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+
             </div>
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
-        </div>
-    </nav>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
 
-    <section class="home">
-        <div class="flex-container">
-     		<div class="spo-flex">
-				<iframe class="spo-frame" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIVlNhFbHM8Ob" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			</div>
-			<div>
-				<iframe class="spo-frame" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1XTVWU" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			</div>
-			<div>
-				<iframe class="spo-frame" src="https://open.spotify.com/embed/playlist/5oosd4wwq11XLYy0EZrJo0" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			</div>
-        </div>
-    </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
 
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
-    <script>
+
+
+
+        <script>
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
+        <script>
             $('.navTrigger').click(function () {
-            $(this).toggleClass('active');
-            console.log("Clicked menu");
-            $("#mainListDiv").toggleClass("show_list");
-            $("#mainListDiv").fadeIn();
-        });
-    </script>
-</body>
+                $(this).toggleClass('active');
+                console.log("Clicked menu");
+                $("#mainListDiv").toggleClass("show_list");
+                $("#mainListDiv").fadeIn();
+            });
+        </script>
+
+
+    </body>
 </html>
